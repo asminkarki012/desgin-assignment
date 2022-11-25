@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Design using Tailwindcss</title>
+</head>
+
+<body class="font-sanz">
+    <div class="flex w-full bg-slate-400">
+        <!-- dashboard -->
+        <div class="flex flex-col bg-white justify-start items-start w-64 my-4 ml-8 mr-4 rounded-md">
+            <div class="mx-auto py-4 flex flex-col">
+                <i class="fa-solid fa-headphones text-blue-600 m-auto"></i>
+                <!-- <i class="fa-solid fa-headphones m-auto text-blue-600"></i> -->
+                <span class="text-xs text-gray-300">Streaming Paradise</span>
+            </div>
+            <div class="flex flex-col bg-white w-64 my-8 py-4 px-4 m-auto rounded-lg">
+                <ul class="py-4 px-4 font-medium">
+                    <i class="fa-sharp fa-solid fa-house text-blue-600 mr-2"></i>
+                    Home
+                </ul>
+
+                <ul class="flex flex-row py-4 px-4 font-medium">
+                    <i class="fa-solid fa-video text-blue-600 mr-4 mt-1"></i>
+                    <span class="flex flex-row">
+                        Live
+                        <i class="fa-solid fa-circle text-red-500 text-[5px]"></i>
+                    </span>
+                </ul>
+                <ul class="py-4 px-4 font-medium">
+                    <i class="fa-solid fa-music text-blue-600 mr-4"></i>
+                    Library
+                    <i class="fa-solid fa-angle-down text-xs ml-16"></i>
+                </ul>
+                <ul class="py-4 px-4 font-medium">
+                    <i class="fa-solid fa-file-audio text-blue-600 mr-4"></i>
+                    Playlists
+                    <i class="fa-solid fa-plus text-xs ml-16"></i>
+
+                    <span class="flex flex-col justify-center items-center py-2">
+                        <ul class="flex flex-col justify-center py-2">
+
+                            <ul class="text-slate-500 py-2">
+
+                                <span class="text-sm">
+                                    <i class="fa-solid fa-play text-xs mr-2"></i>
+                                    Funny
+
+                                </span>
+                            </ul>
+
+                            <!--item-->
+
+                            <ul class="text-slate-500 py-2">
+                                <span class="text-sm">
+                                    <i class="fa-solid fa-play text-xs mr-2"></i>
+                                    Tutorials
+                                </span>
+                            </ul>
+
+
+
+                            <ul class="text-slate-500 py-2">
+                                <span class="text-sm">
+                                    <i class="fa-solid fa-play text-xs mr-2"></i>
+                                    Tutorials
+                                </span>
+                            </ul>
+
+
+                            <ul class="text-slate-500">
+                                <span class="text-sm">
+                                    Show More
+                                </span>
+                            </ul>
+
+                        </ul>
+
+                    </span>
+                </ul>
+                <div class="py-4 px-4 font-medium">
+                    <i class="fa-solid fa-fire text-blue-600 mr-4"></i>
+                    Trending
+                    <!-- Trending items -->
+                    <div class="flex flex-col my-4">
+                        <ul class="flex flex-col justify-center items-center">
+                            <ul class="text-slate-500 flex flex-row my-2">
+                                <img src="./assets/headshot.webp" class="rounded-full w-8 h-8 mr-4" alt="">
+                                <div>
+                                    <p> VideoG
+                                    </p>
+
+                                    <small class="my-6">24k Watching</small>
+                                </div>
+                                <i class="fa-solid fa-tower-broadcast ml-6 mt-2"></i>
+                            </ul>
+
+                        </ul>
+
+                            <ul class="flex flex-col justify-center items-center">
+                                <ul class="text-slate-500 flex flex-row my-2">
+                                    <img src="./assets/headshot.webp" class="rounded-full w-8 h-8 mr-4" alt="">
+                                    <div>
+                                        <p> videog
+                                        </p>
+
+                                        <small class="my-6">24k watching</small>
+                                    </div>
+                                    <i class="fa-solid fa-tower-broadcast ml-6 mt-2"></i>
+                                </ul>
+                            </ul>
+                    </div>
+                </div>
+                <!--dashboard icons-->
+            </div>
+            <i class="fa-solid fa-angles-down mx-auto"></i>
+        </div>
+        <!--dashboard-->
+
+        <div class="w-full mr-8">
+
+            <div class="flex flex-row justify-between bg-white content-center mt-8 mb-4 p-6 rounded-lg">
+                <!--navbar-->
+
+                <div class="rounded-md bg-gray-100 flex items-center px-4">
+                    <i class="fa-solid fa-magnifying-glass text-blue-600 bg-gray-100 py-1"></i>
+                    <input type="text"
+                        class="placeholder:text-gray-400 placeholder:text-sm px-2 bg-gray-100 outline-none"
+                        placeholder="Search"></ul>
+                </div>
+                <div class="mr-auto ml-12 my-auto">
+                    Welcome To The Streaming Paradise
+                </div>
+
+                <div class="flex flex-row items-center gap-4">
+                    <div class="flex gap-4">
+                        <div class="flex">
+                            <i class="fa-solid fa-circle-chevron-down text-blue-600"></i>
+                            <i class="fa-solid fa-circle text-red-500 text-[5px]"></i>
+                        </div>
+                        <i class="fa-solid fa-bell text-blue-600"></i>
+                    </div>
+                    <div class="flex bg-gray-100 rounded-full p-2 gap-6">
+                        <span class="text-gray-500">GJarmel</span><img src="./assets/hs3.webp"
+                            class="rounded-full w-6 h-6" alt="">
+                    </div>
+                </div>
+
+                <!--navbar-->
+            </div>
+
+
+            <div class="bg-white h-68 py-4 rounded-md">
+                <!--2nd item-->
+                <div class="flex justify-between w-full mt-4 p-6">
+
+                    <h2>Popular Uploads</h1>
+
+                        <div class="flex gap-4">
+                            <i class="fa-solid fa-arrow-left text-blue-600 bg-gray-100 rounded-full p-1"></i>
+                            <i class="fa-solid fa-arrow-right text-blue-600 bg-gray-100 rounded-full p-1"></i>
+
+
+
+                        </div>
+                </div>
+
+
+                <div class="flex mx-6 ">
+                    <div
+                        class="mx-1 hover:rotate-[-18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 transition-all hover:-translate-x-8 hover:backdrop-blur-sm hover:border-2 hover:border-white/30 ">
+                        <!--card1-->
+                        <div class="w-48 relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-44" alt="">
+                            <i class="flex justify-center items-center fa-solid fa-play absolute top-[50%] left-[50%] text-white  translate-x-[-50%]
+                        translate-y-[-50%] text-xl bg-white/40 p-2 w-10 h-10 rounded-full"></i>
+                            <p
+                                class="bg-blue-600 rounded-md w-12 text-white text-center text-sm p-1 absolute top-2 right-2">
+                                0:024</p>
+                        </div>
+                        <div>
+                            <h1>Dancing in Paris</h1>
+                            <p> <i class="fa-solid fa-thumbs-up"></i> 110,005</p>
+                            <p class="pb-4"> Views: 11,047,396</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mx-1 hover:rotate-[-18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 transition-all hover:-translate-x-8 hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="w-48 relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-44" alt="">
+                            <i class="flex justify-center items-center fa-solid fa-play absolute top-[50%] left-[50%] text-white translate-x-[-50%]
+                        translate-y-[-50%] text-xl bg-white/40 p-2 w-10 h-10 rounded-full"></i>
+                            <p
+                                class="bg-blue-600 rounded-md w-12 text-white text-center text-sm p-1 absolute top-2 right-2 ">
+                                0:024</p>
+                        </div>
+                        <div>
+                            <h1>Dancing in Paris</h1>
+                            <p> <i class="fa-solid fa-thumbs-up"></i> 110,005</p>
+                            <p class="pb-4"> Views: 11,047,396</p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="mx-1 hover:rotate-[-18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 transition-all hover:-translate-x-8 hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="w-48 relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-44" alt="">
+                            <i class="flex justify-center items-center fa-solid fa-play absolute top-[50%] left-[50%] text-white translate-x-[-50%]
+                        translate-y-[-50%] text-xl bg-white/40 p-2 w-10 h-10 rounded-full"></i>
+                            <p
+                                class="bg-blue-600 rounded-md w-12 text-white text-center text-sm p-1 absolute top-2 right-2 ">
+                                0:024</p>
+                        </div>
+                        <div>
+                            <h1>Dancing in Paris</h1>
+                            <p> <i class="fa-solid fa-thumbs-up"></i> 110,005</p>
+                            <p class="pb-4"> Views: 11,047,396</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mx-1 hover:rotate-[-18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 transition-all hover:-translate-x-8 hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="w-48 relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-44" alt="">
+                            <i class="flex justify-center items-center fa-solid fa-play absolute top-[50%] left-[50%] text-white translate-x-[-50%]
+                        translate-y-[-50%] text-xl bg-white/40 p-2 w-10 h-10 rounded-full"></i>
+                            <p
+                                class="bg-blue-600 rounded-md w-12 text-white text-center text-sm p-1 absolute top-2 right-2 ">
+                                0:024</p>
+                        </div>
+                        <div>
+                            <h1>Dancing in Paris</h1>
+                            <p> <i class="fa-solid fa-thumbs-up"></i> 110,005</p>
+                            <p class="pb-4"> Views: 11,047,396</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mx-1 hover:rotate-[-18deg] bg-white/30 p-4 rounded-md hover:-translate-y-8 transition-all hover:-translate-x-8 hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="w-48 relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-44" alt="">
+                            <i class="flex justify-center items-center fa-solid fa-play absolute top-[50%] left-[50%] text-white translate-x-[-50%]
+                        translate-y-[-50%] text-xl bg-white/40 p-2 w-10 h-10 rounded-full"></i>
+                            <p
+                                class="bg-blue-600 rounded-md w-12 text-white text-center text-sm p-1 absolute top-2 right-2 ">
+                                0:024</p>
+                        </div>
+                        <div>
+                            <h1>Dancing in Paris</h1>
+                            <p> <i class="fa-solid fa-thumbs-up"></i> 110,005</p>
+                            <p class="pb-4"> Views: 11,047,396</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--2nd items-->
+            <div class="flex w-full py-4 gap-4">
+                <div class="bg-white w-1/3 h-64 rounded-md p-4 overflow-hidden">
+                    <h1>Most Played Daily</h1>
+                    <div class="px-2 my-2 flex justify-between items-center">
+                        <img src="./assets/images/mostplayedaily1.webp" class="w-8 h-8 rounded-md" alt="">
+                        <div>
+
+                            <p> Imagine Dragons: Demon </p>
+                            <p class="text-xs">Played: 2,066</p>
+                        </div>
+                        <div class="flex gap-8">
+                            <p class="text-xs text-center m-auto">03:57</p>
+                            <i
+                                class="fa-solid fa-play text-blue-600 text-xs text-center rounded-full w-5 h-5 border-2 border-gray-100"></i>
+                        </div>
+                    </div>
+
+                    <div class="px-2 my-2 flex justify-between items-center">
+                        <img src="./assets/images/mostplayedaily1.webp" class="w-8 h-8 rounded-md" alt="">
+                        <div>
+
+                            <p> Imagine Dragons: Demon </p>
+                            <p class="text-xs">Played: 2,066</p>
+                        </div>
+                        <div class="flex gap-8">
+                            <p class="text-xs text-center m-auto">03:57</p>
+                            <i
+                                class="fa-solid fa-play text-blue-600 text-xs text-center rounded-full w-5 h-5 border-2 border-gray-100"></i>
+                        </div>
+                    </div>
+
+                    <div class="px-2 my-2 flex justify-between items-center">
+                        <img src="./assets/images/mostplayedaily1.webp" class="w-8 h-8 rounded-md" alt="">
+                        <div>
+
+                            <p> Imagine Dragons: Demon </p>
+                            <p class="text-xs">Played: 2,066</p>
+                        </div>
+                        <div class="flex gap-8">
+                            <p class="text-xs text-center m-auto">03:57</p>
+                            <i
+                                class="fa-solid fa-play text-blue-600 text-xs text-center rounded-full w-5 h-5 border-2 border-gray-100"></i>
+                        </div>
+                    </div>
+
+                    <div class="px-2 my-2 flex justify-between items-center">
+                        <img src="./assets/images/mostplayedaily1.webp" class="w-8 h-8 rounded-md" alt="">
+                        <div>
+
+                            <p> Imagine Dragons: Demon </p>
+                            <p class="text-xs">Played: 2,066</p>
+                        </div>
+                        <div class="flex gap-8">
+                            <p class="text-xs text-center m-auto">03:57</p>
+                            <i
+                                class="fa-solid fa-play text-blue-600 text-xs text-center rounded-full w-5 h-5 border-2 border-gray-100"></i>
+                        </div>
+                    </div>
+
+                    <div class="px-2 my-2 flex justify-between items-center">
+                        <img src="./assets/images/mostplayedaily1.webp" class="w-8 h-8 rounded-md" alt="">
+                        <div>
+
+                            <p> Imagine Dragons: Demon </p>
+                            <p class="text-xs">Played: 2,066</p>
+                        </div>
+                        <div class="flex gap-8">
+                            <p class="text-xs text-center m-auto">03:57</p>
+                            <i
+                                class="fa-solid fa-play text-blue-600 text-xs text-center rounded-full w-5 h-5 border-2 border-gray-100"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bg-white w-2/3 p-4 rounded-md h-64 overflow-hidden">
+
+                    <div class="flex justify-between w-full">
+
+                        <h2 class="font-semibold">Join The Show</h1>
+
+                            <div class="flex gap-4">
+                                <i class="fa-solid fa-arrow-left text-blue-600 bg-gray-100 rounded-full p-1"></i>
+                                <i class="fa-solid fa-arrow-right text-blue-600 bg-gray-100 rounded-full p-1"></i>
+
+                            </div>
+                    </div>
+            <div class="flex">
+                <div class="flex my-2 px-2 w-1/4">
+                    <div
+                        class="hover:rotate-[18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 hover:-translate-x-8 hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-24" alt="">
+                            <p
+                                class="bg-red-600 rounded-md text-white text-center text-xs p-1 absolute top-2 right-4 ">
+                                Live</p>
+                        </div>
+                        <div class="text-start">
+                            <h1 class="text-sm">Dancing Session</h1>
+                            <p class="text-xs text-grey-200 my-2"> Watching: 8,537</p>
+                            <p class="text-blue-600 text-sm"><i class="fa-solid fa-location-pin mx-1"></i> James Hall</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="flex my-2 px-2 w-1/4">
+                    <div
+                        class="hover:rotate-[18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 hover:-translate-x-8  transition-all hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-24" alt="">
+                            <p
+                                class="bg-red-600 rounded-md text-white text-center text-xs p-1 absolute top-2 right-4 ">
+                                Live</p>
+                        </div>
+                        <div class="text-start">
+                            <h1 class="text-sm">Dancing Session</h1>
+                            <p class="text-xs text-grey-200 my-2"> Watching: 8,537</p>
+                            <p class="text-blue-600 text-sm"><i class="fa-solid fa-location-pin mx-1"></i> James Hall</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex my-2 px-2 w-1/4">
+                    <div
+                        class="hover:rotate-[18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 hover:-translate-x-8 transition-all hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-24" alt="">
+                            <p
+                                class="bg-red-600 rounded-md text-white text-center text-xs p-1 absolute top-2 right-4 ">
+                                Live</p>
+                        </div>
+                        <div class="text-start">
+                            <h1 class="text-sm">Dancing Session</h1>
+                            <p class="text-xs text-grey-200 my-2"> Watching: 8,537</p>
+                            <p class="text-blue-600 text-sm"><i class="fa-solid fa-location-pin mx-1"></i> James Hall</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex my-2 px-2 w-1/4">
+                    <div
+                        class="hover:rotate-[18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 hover:-translate-x-8 transition-all hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-24" alt="">
+                            <p
+                                class="bg-red-600 rounded-md text-white text-center text-xs p-1 absolute top-2 right-4 ">
+                                Live</p>
+                        </div>
+                        <div class="text-start">
+                            <h1 class="text-sm">Dancing Session</h1>
+                            <p class="text-xs text-grey-200 my-2"> Watching: 8,537</p>
+                            <p class="text-blue-600 text-sm"><i class="fa-solid fa-location-pin mx-1"></i> James Hall</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex my-2 px-2 w-1/4">
+                    <div
+                        class="hover:rotate-[18deg] bg-white/30 p-4 rounded-md hover:-translate-y-7 hover:-translate-x-8 transition-all hover:backdrop-blur-sm hover:border-2 hover:border-white/30">
+                        <!--card1-->
+                        <div class="relative">
+                            <img src="./assets/images/code1.jpeg" class="rounded-md h-24" alt="">
+                            <p
+                                class="bg-red-600 rounded-md text-white text-center text-xs p-1 absolute top-2 right-4 ">
+                                Live</p>
+                        </div>
+                        <div class="text-start">
+                            <h1 class="text-sm">Dancing Session</h1>
+                            <p class="text-xs text-grey-200 my-2"> Watching: 8,537</p>
+                            <p class="text-blue-600 text-sm"><i class="fa-solid fa-location-pin mx-1"></i> James Hall</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <!--hero section-->
+
+
+    </div>
+    <!--whole container-->
+</body>
+
+</html>
